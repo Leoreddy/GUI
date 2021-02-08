@@ -1,5 +1,5 @@
-import javax.swing.JFrame;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 
 public class FirstSwingDemo{
 
@@ -10,6 +10,15 @@ public class FirstSwingDemo{
     {
         JFrame firstWindow = new JFrame();
         firstWindow.setSize(WIDTH,HEIGHT);
+        firstWindow.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        firstWindow.setVisible(true);        
+
+        JButton endButton = new JButton("Click to end program.");
+        EndingListener buttonEar = new EndingListener();
+        endButton.addActionListener(buttonEar);
+        firstWindow.add(endButton);
+
+
     }
 
 }
