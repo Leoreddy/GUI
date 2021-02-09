@@ -5,7 +5,9 @@ public class EndingListener implements ActionListener{
 
     public void actionPerformed(ActionEvent e)
     {
-        System.exit(0);
+        System.exit(0); //Exits program
     } 
     
 }
+
+// Action events use action listeners
