@@ -7,7 +7,7 @@ public class FirstWindow extends JFrame {
     public static final int HEIGHT = 200;
 
     public FirstWindow() {
-        super();
+        super(); // Can create title by passing it to this constructor
         setTitle("First Window Class");
         setSize(WIDTH, HEIGHT);
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
@@ -17,3 +17,4 @@ public class FirstWindow extends JFrame {
     }
 }
 
+//Neater way
